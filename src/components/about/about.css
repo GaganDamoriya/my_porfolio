@@ -1,0 +1,47 @@
+body {
+  min-height: 100%;
+}
+.aboutMediv {
+  background-color: blueviolet;
+  display: flex;
+  color: aliceblue;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.about_Me {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+.aboutimg {
+  width: 50%;
+  min-height: 300px;
+}
+.aboutimg img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.aboutContent {
+  width: 50%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.aboutme_heading {
+  font-size: x-large;
+  font-weight: 800;
+  color: aqua;
+  text-shadow: 3px 3px red;
+}
+.aboutme_title {
+  font-size: large;
+  font-weight: 800;
+}
+.aboutme_intro {
+  color: rgb(203, 208, 212);
+}

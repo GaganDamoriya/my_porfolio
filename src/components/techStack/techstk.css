@@ -1,0 +1,53 @@
+.techStck {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  padding-left: 10px;
+  background-color: rgb(68, 66, 66);
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: "Mooli";
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.headnav {
+  display: flex;
+
+  justify-content: space-between;
+}
+.heading {
+  color: aliceblue;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  font-size: x-large;
+}
+
+.images img {
+  height: 40px;
+  width: 40px;
+  object-fit: scale-down;
+}
+.icon_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: 600;
+}
+.allTech {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  animation: content 10s infinite linear;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: rotateY(360deg);
+  }
+}

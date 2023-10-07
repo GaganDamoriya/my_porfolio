@@ -1,0 +1,40 @@
+.contactMe {
+  background-color: rgb(68, 66, 66);
+  color: white;
+  font-family: "Mooli";
+  padding: 30px 0px 10px 0px;
+}
+.contactMeLinks {
+  padding-top: 10px;
+  display: flex;
+  font-size: 40px;
+  gap: 20px;
+}
+
+.contactMeLinks div a {
+  color: aliceblue;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    color: blue;
+  }
+}
+.follow {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  gap: 20px;
+}
+.follow a {
+  text-decoration: none;
+  color: aliceblue;
+  &:hover {
+    cursor: pointer;
+    color: lightskyblue;
+  }
+}
+.contact_heading {
+  font-size: x-large;
+  font-weight: 700;
+  padding-bottom: 20px;
+}

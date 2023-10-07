@@ -1,0 +1,83 @@
+body {
+  min-height: 100%;
+  width: 100%;
+}
+.dashB {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: blueviolet;
+
+  padding: 70px 0px;
+}
+.heroBanner {
+  display: flex;
+}
+.heroBanner div {
+  width: 50%;
+  height: 400px;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  font-size: 4em;
+  font-weight: 600;
+  text-shadow: red 2px 3px;
+  font-family: "Pixelify Sans";
+}
+.heroContent p {
+  padding-top: 30px;
+  font-size: 20px;
+  text-shadow: none;
+  font-weight: 300;
+  font-family: "Mooli";
+}
+.bubbles {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+.liquid_img {
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  width: 200px;
+  height: 300px;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  animation: liquid 5s ease-in-out infinite;
+  object-fit: fill;
+}
+.moreinfoBtn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: black;
+  font-weight: 600;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@keyframes liquid {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    background-size: 100% 100%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    background-size: 300% 150%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    background-size: 100% 100%;
+  }
+}
