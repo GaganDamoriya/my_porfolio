@@ -1,10 +1,7 @@
 export const projectDatadisplay = [
   {
     name: "TradeCoin",
-    des: ` Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text
-      ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it to make a type specimen book`,
+    des: ` TradeCoin is a static web application we creative design displaying current prices of cryptocurrencies, data is fetched from coinRanking API which is easy to use and written with proper instructions`,
     techStack: ["Nodejs", "React"],
     githubLink: "https://github.com/GaganDamoriya/CryptoMark",
     deployLink: "https://showcoinranking.netlify.app/",
@@ -13,10 +10,7 @@ export const projectDatadisplay = [
   },
   {
     name: "picUrShow",
-    des: ` Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text
-      ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it to make a type specimen book`,
+    des: ` pichUrShow is a movie recommedation static website with modern design built with React,scss,"When bored not know what to watch go to picUrShow sort according to your genre and have a good time" API used here is TMDB API most well managed open source API for all movies,TV shows etc,.`,
     techStack: ["Nodejs", "React"],
     githubLink: "https://github.com/GaganDamoriya/pickUrshow",
     deployLink: "https://thepicurshowebsite.netlify.app/",
@@ -25,11 +19,8 @@ export const projectDatadisplay = [
   },
   {
     name: "LetsHelp",
-    des: ` Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text
-      ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it to make a type specimen book`,
-    techStack: ["Nodejs", "React"],
+    des: ` LetsHelp is a charity website that also displays other foundations,(charity websites) that need immediate attention or fundraising it has its checkout system as well for direct donations to LetsHelp foundation made using StripeAPI currently in (test mode).`,
+    techStack: ["Nodejs", "React", "Firebase", "Stripe"],
     githubLink: "https://github.com/GaganDamoriya/EGcharityWebsite",
     deployLink: "https://letshelpcharity.netlify.app/",
     imgUrl:

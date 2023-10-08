@@ -35,12 +35,34 @@ const Projectdisplay = () => {
                 </p>
               </div>
               <div className="projectTech">
-                <span style={{ backgroundColor: "blue", color: "white" }}>
+                {project.techStack.map((tech, i) => (
+                  <span
+                    key={i}
+                    style={{
+                      backgroundColor:
+                        tech === "React"
+                          ? "blue"
+                          : tech === "Nodejs"
+                          ? "green"
+                          : tech === "Firebase"
+                          ? "yellow"
+                          : tech === "MongoDB"
+                          ? "yellowgreen"
+                          : tech === "Stripe"
+                          ? "lightblue"
+                          : "transparent", // Default color
+                      color: "white",
+                    }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+                {/* <span style={{ backgroundColor: "blue", color: "white" }}>
                   React
                 </span>
                 <span style={{ backgroundColor: "green", color: "white" }}>
                   Nodejs
-                </span>
+                </span> */}
               </div>
               <div className="clickLinks">
                 <div>
