@@ -24,8 +24,12 @@ const DashBoard = () => {
             >
               Hello, there👋
             </span>
-            <span style={{ fontFamily: "Pixelify Sans" }}>I am Full Stack</span>
-            <span style={{ fontFamily: "Pixelify Sans" }}>Developer.</span>
+            <span className="headingH" style={{ fontFamily: "Pixelify Sans" }}>
+              I am Full Stack
+            </span>
+            <span className="headingH" style={{ fontFamily: "Pixelify Sans" }}>
+              Developer.
+            </span>
             <p>
               {show ? bios : `${bios.substring(0, 150)}... `}
               <button className="moreinfoBtn" onClick={() => setShow(!show)}>

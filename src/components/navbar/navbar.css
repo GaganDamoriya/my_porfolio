@@ -1,12 +1,13 @@
 .navB {
   min-width: 95%;
-  background-color: blueviolet;
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px 0px 2px 1px;
   font-family: "Mooli";
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .navComp {
@@ -35,4 +36,13 @@
   text-decoration: none;
   color: white;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+@media screen and (max-width: 580px) {
+  .navB {
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+  }
+  .sideItems {
+    display: none;
+  }
 }

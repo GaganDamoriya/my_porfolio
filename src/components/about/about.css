@@ -2,7 +2,6 @@ body {
   min-height: 100%;
 }
 .aboutMediv {
-  background-color: blueviolet;
   display: flex;
   color: aliceblue;
   min-height: 100vh;

@@ -41,6 +41,8 @@
   justify-content: space-evenly;
   flex-direction: row;
   animation: content 10s infinite linear;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 .images {
   display: flex;
@@ -49,5 +51,21 @@
   transition: transform 0.5s ease-in-out;
   &:hover {
     transform: rotateY(360deg);
+  }
+}
+@media screen and (max-width: 580px) {
+  .heading {
+    font-size: large;
+  }
+  .allTech {
+    padding: 5px 0px 5px 0px;
+    gap: 25px;
+  }
+  .images img {
+    width: 30px;
+    height: 30px;
+  }
+  .icon_name {
+    font-size: 10px;
   }
 }

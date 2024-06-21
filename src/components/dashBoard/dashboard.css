@@ -6,7 +6,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: blueviolet;
 
   padding: 70px 0px;
 }
@@ -79,5 +78,34 @@ body {
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     background-size: 100% 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .heroBanner {
+    flex-direction: column;
+  }
+  .heroBanner div {
+    width: 95%;
+  }
+  .headingH {
+    font-size: 3rem;
+    width: 70%;
+  }
+  .bubbles {
+    display: none;
+  }
+  .heroContent {
+    margin-top: 0px;
+  }
+  .heroImage {
+    top: 0;
+    position: absolute;
+  }
+  .liquid_img {
+    height: 200px;
+    width: 130px;
+  }
+  .heroContent p {
+    font-size: 14px;
   }
 }
