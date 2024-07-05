@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./projectdisplay.css";
 import { AiFillGithub } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";
@@ -6,11 +6,31 @@ import { projectDatadisplay } from "../../../projectData";
 import { BsCoin } from "react-icons/bs";
 const Projectdisplay = () => {
   const [show, setShow] = useState(false);
+  const [mobile, setMobile] = useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth < 780) {
+      setMobile(true);
+      console.log(mobile);
+    } else {
+      setMobile(false);
+      console.log(mobile);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
+
   return (
     <div className="containerProject" id="Projects">
       {projectDatadisplay.map((project, index) =>
-        index % 2 === 0 ? (
+        index % 2 === 0 || mobile ? (
           <div className="displaydiv" key={index}>
+            <span className="mob_view">
+              <span>{index + 1}.</span>
+              {project.name}
+            </span>
             <div className="img_project">
               <a
                 href={project.deployLink}
@@ -21,7 +41,7 @@ const Projectdisplay = () => {
               </a>
             </div>
             <div className="Content_project">
-              <div className="projectTitle">{project.name}</div>
+              <span className="projectTitle">{project.name}</span>
               <div className="projectdes">
                 <p>
                   {show ? project.des : `${project.des.substring(0, 100)}...`}

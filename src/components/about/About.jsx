@@ -7,14 +7,15 @@ const About = () => {
   return (
     <div className="aboutMediv" id="AboutSection">
       <ContentBody>
+        <h2 className="aboutme_heading mob-view">About me</h2>
         <div className="about_Me">
           <div className="aboutimg">
             <img src={imgAboutMe} alt="AboutMe" />
           </div>
           <div className="aboutContent">
-            <div className="aboutme_heading">About me</div>
+            <div className="aboutme_heading web_view">About me</div>
             <div className="aboutme_title">
-              A dedicated Front End Developer from Noida,NCR📍
+              A dedicated Full-Stack Developer from Noida, NCR📍
             </div>
             <div className="aboutme_intro">
               As a Full Stack Developer, I thrive in the realm of web

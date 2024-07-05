@@ -1,5 +1,15 @@
 export const projectDatadisplay = [
   {
+    name: "SocialBinge",
+    des: ` TradeCoin is a static web application we creative design displaying current prices of cryptocurrencies, data is fetched from coinRanking API which is easy to use and written with proper instructions`,
+    techStack: ["Nodejs", "React", "Firebase", "MongoDB"],
+    githubLink: "https://github.com/GaganDamoriya/SocialBinge",
+    deployLink: "https://socialbingee.netlify.app/",
+    imgUrl:
+      "https://firebasestorage.googleapis.com/v0/b/egcharitywebsite.appspot.com/o/files%2Fsm3.png?alt=media&token=ba150b0d-8a88-4fb9-b918-2144abe3ffae",
+  },
+
+  {
     name: "TradeCoin",
     des: ` TradeCoin is a static web application we creative design displaying current prices of cryptocurrencies, data is fetched from coinRanking API which is easy to use and written with proper instructions`,
     techStack: ["Nodejs", "React"],

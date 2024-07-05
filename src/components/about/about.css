@@ -44,3 +44,30 @@ body {
 .aboutme_intro {
   color: rgb(203, 208, 212);
 }
+.mob-view {
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .mob-view {
+    display: flex;
+  }
+  .about_Me {
+    flex-direction: column;
+  }
+  .web_view {
+    display: none;
+  }
+  .aboutimg {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutContent {
+    width: 100%;
+  }
+  .aboutimg img {
+    width: 288px;
+    height: 214px;
+  }
+}
