@@ -1,7 +1,7 @@
 export const projectDatadisplay = [
   {
     name: "SocialBinge",
-    des: ` TradeCoin is a static web application we creative design displaying current prices of cryptocurrencies, data is fetched from coinRanking API which is easy to use and written with proper instructions`,
+    des: ` SocialBinge is a Social Media website where one can create Post, like a post, Delete a post follow users can create tags, It is a fullstack application where data is being stored on online can be accessed from anywhere.`,
     techStack: ["Nodejs", "React", "Firebase", "MongoDB"],
     githubLink: "https://github.com/GaganDamoriya/SocialBinge",
     deployLink: "https://socialbingee.netlify.app/",
