@@ -1,4 +1,1 @@
-body {
-  margin: 0;
-  background-color: blueviolet;
-}
+/* App-level styles — base overrides handled in index.css via CSS variables */

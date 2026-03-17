@@ -1,74 +1,42 @@
-import React from "react";
-import imgreact from "../../assets/react.svg";
-import vite from "../../assets/vite.svg";
-import imghtml from "../../assets/html.png";
-import imgcss from "../../assets/imgcss.webp";
-import imgfirebase from "../../assets/imgfirebase.png";
-import imgmongo from "../../assets/imgmongo.png";
-import imgscss from "../../assets/imgscss.png";
-import imgNode from "../../assets/imgnode.png";
-import imgNext from "../../assets/imgnext.webp";
-import imgpostman from "../../assets/imgpostman.svg";
-import imgtailwind from "../../assets/imgtailwind.png";
-
-import "./techstk.css";
-import ContentBody from "../contentBody/ContentBody";
+import { techStackData } from '../../techStackData';
 
 const TechStack = () => {
+  /* Duplicate the list so the marquee loops seamlessly */
+  const doubled = [...techStackData, ...techStackData];
+
   return (
-    <div className="techStck">
-      <ContentBody>
-        <div className="headnav">
-          <span className="heading">Tech Stack :</span>
+    <section
+      style={{
+        padding: '40px 0',
+        backgroundColor: 'var(--bg-elevated)',
+        borderTop: '1px solid var(--border)',
+        borderBottom: '1px solid var(--border)',
+        overflow: 'hidden',
+      }}
+    >
+      <div
+        className="flex"
+        style={{ width: `${doubled.length * 120}px` }}
+      >
+        <div className="marquee-track flex gap-8 items-center" style={{ width: '100%' }}>
+          {doubled.map(({ name, Icon, color }, i) => (
+            <div
+              key={`${name}-${i}`}
+              className="flex flex-col items-center gap-2 flex-shrink-0"
+              style={{ width: 80 }}
+            >
+              <Icon size={32} color={color || 'var(--text-secondary)'} />
+              <span
+                className="font-mono text-xs text-center"
+                style={{ color: 'var(--text-secondary)' }}
+              >
+                {name}
+              </span>
+            </div>
+          ))}
         </div>
-        <div className="allTech">
-          <div className="images">
-            <img className="img_icon" src={imgreact} alt="react" />
-            <div className="icon_name">React</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imghtml} alt="html" />
-            <div className="icon_name">HTML</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgcss} alt="css" />
-            <div className="icon_name">CSS</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgscss} alt="scss" />
-            <div className="icon_name">Scss</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgNode} alt="node" />
-            <div className="icon_name">Nodejs</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgfirebase} alt="firebase" />
-            <div className="icon_name">Firebase</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgmongo} alt="mongo" />
-            <div className="icon_name">MongoDB</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgNext} alt="Next" />
-            <div className="icon_name">NEXT</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgtailwind} alt="tailwind" />
-            <div className="icon_name">TailWind</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={imgpostman} alt="postman" />
-            <div className="icon_name">Postman</div>
-          </div>
-          <div className="images">
-            <img className="img_icon" src={vite} alt="vite" />
-            <div className="icon_name">Vite</div>
-          </div>
-        </div>
-      </ContentBody>
-    </div>
+      </div>
+    </section>
   );
 };
 
